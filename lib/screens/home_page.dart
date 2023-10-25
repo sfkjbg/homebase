@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
       // Scaffold is a basic app structure with app bar, body, etc.
       appBar: AppBar(
         // AppBar is the top app bar with a title.
-        title: const Text('Hitler Sucks'),
+        title: const Text('Home Base'),
       ),
       body: Center(
         // Center widget aligns its child in the center of the screen.
@@ -44,6 +44,15 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Order Food & Drinks'),
             ),
+
+            ElevatedButton(
+              onPressed: () {
+                // Navigator.pushNamed(context, '/order');
+                Navigator.pushNamed(context, '/new_screen_from_web'); // Use the correct route name
+              },
+              child: const Text('New Screen'),
+            ),
+
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/check_in_page');

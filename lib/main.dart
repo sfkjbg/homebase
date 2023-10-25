@@ -36,6 +36,7 @@
 import 'package:flutter/material.dart';
 import 'package:home_base/screens/home_page.dart';
 import 'package:home_base/screens/login_page.dart';
+import 'package:home_base/screens/new_screen_from_web.dart';
 import 'package:home_base/screens/order_page.dart';
 import 'package:home_base/screens/profile_page.dart';
 import 'package:home_base/screens/reservation_page.dart';
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Your App Title',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepOrange,
       ),
       initialRoute: '/home_page',
       routes: {
@@ -66,7 +67,8 @@ class MyApp extends StatelessWidget {
         '/shop_page': (context) => ShopPage(),
         '/wallet_page': (context) => WalletPage(),
         '/settings_page': (context) => SettingsPage(),
-        '/check_in_page': (context) => CheckInPage()
+        '/check_in_page': (context) => CheckInPage(),
+        '/new_screen_from_web': (context) =>  NewScreenFromWeb(),
       },
     );
   }
